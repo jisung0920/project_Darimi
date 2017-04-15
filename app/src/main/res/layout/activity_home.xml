@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
+    android:background="#cac8c8"
     android:orientation="vertical"
     android:weightSum="6"
     tools:context="com.example.jisung.darimi.HomeActivity">
@@ -37,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:textSize="40dp"
             android:text="0000-00-00" />
 
 
