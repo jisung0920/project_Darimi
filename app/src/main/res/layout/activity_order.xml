@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:layout_margin="30dp"
+    tools:context="com.example.jisung.darimi.OrderActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+        <ImageButton
+            android:id="@+id/b2"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000-00-00"
+            android:layout_gravity="bottom"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        >
+        <TabHost
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:id="@+id/tabhost1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:background="#ccc"
+                    android:gravity="right"
+                    android:text=" 니트 - 1 +"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ccc"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ccc"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ccc"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ccc"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ccc"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="총액"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0000 원"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/comp"
+            android:text="완료"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</LinearLayout>

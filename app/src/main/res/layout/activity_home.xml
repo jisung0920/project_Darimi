@@ -5,31 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="6"
     android:layout_margin="20dp"
     tools:context="com.example.jisung.darimi.HomeActivity">
 
     <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/b1"/>
         <ImageButton
+            android:id="@+id/b2"
             android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000-00-00"
+            android:layout_gravity="bottom"
+            />
+
 
     </LinearLayout>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:name="com.example.jisung.darimi.SelectFragment"/>
-    <fragment
-        android:name="com.example.jisung.darimi.SearchFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/orderButton"
+            android:text="주문"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/displayButton"
+            android:text="현황"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/incomeButton"
+            android:text="매출"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 
 
