@@ -14,7 +14,7 @@ public class OrderActivity extends AppCompatActivity {
     Intent intent;
     TabHost tabhost;
     TextView t1,t2,t3,t4,sum;
-    ImageButton i1,i2;
+    ImageButton i1;
     String text_set1;
 
     @Override
@@ -39,7 +39,17 @@ public class OrderActivity extends AppCompatActivity {
             @Override
             public View createTabContent(String tag) {
                 View view = View.inflate(OrderActivity.this,R.layout.tab_2_layout,null);
-                i2 = (ImageButton)view.findViewById(R.id.jean);
+                ImageButton i2 = (ImageButton)view.findViewById(R.id.jean);
+                i2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v)
+                    {
+                        text_set1 = "     청바지           - 1 +";
+                        t2.setText(text_set1);
+                        t2.setVisibility(View.VISIBLE);
+                        sum.setText("4000원");
+                    }
+                });
                 return view;//두번째 tab에선 3번째 item만
             }
         }).setIndicator("하의"));
@@ -93,16 +103,7 @@ public class OrderActivity extends AppCompatActivity {
                 sum.setText("1000원");
             }
         });
-//        i2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                text_set1 = "     청바지           - 1 +";
-//                t2.setText(text_set1);
-//                t2.setVisibility(View.VISIBLE);
-//                sum.setText("4000원");
-//            }
-//        });
-//이거 에러먹는데?
+
     }
     void init(){
         text_set1=" ";

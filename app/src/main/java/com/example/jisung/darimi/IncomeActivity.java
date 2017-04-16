@@ -1,6 +1,7 @@
 package com.example.jisung.darimi;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -18,19 +19,19 @@ public class IncomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
         init();
-//        c1.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                t1.setVisibility(View.VISIBLE);
-//                t2.setVisibility(View.VISIBLE);
-//                t3.setVisibility(View.VISIBLE);
-//                t4.setVisibility(View.VISIBLE);
-//                t5.setVisibility(View.VISIBLE);
-//                t6.setVisibility(View.VISIBLE);
-//                return false;
-//            }
-//        });
-//달력 터치하면 textview visible되게
+        c1.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
+                t1.setVisibility(View.VISIBLE);
+                t2.setVisibility(View.VISIBLE);
+                t3.setVisibility(View.VISIBLE);
+                t4.setVisibility(View.VISIBLE);
+                t5.setVisibility(View.VISIBLE);
+                t6.setVisibility(View.VISIBLE);
+
+            }
+        });
+
     }
     void init(){
         c1 = (CalendarView)findViewById(R.id.cal);
@@ -53,12 +54,7 @@ public class IncomeActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.cal:
-                t1.setVisibility(View.VISIBLE);
-                t2.setVisibility(View.VISIBLE);
-                t3.setVisibility(View.VISIBLE);
-                t4.setVisibility(View.VISIBLE);
-                t5.setVisibility(View.VISIBLE);
-                t6.setVisibility(View.VISIBLE);
+
                 break;
             default:
                 break;

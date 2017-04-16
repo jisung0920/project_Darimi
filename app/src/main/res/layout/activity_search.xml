@@ -71,15 +71,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="40dp"
+                android:id="@+id/e1"
                 android:layout_gravity="center"
-                android:drawableRight="@drawable/ic_action_name"
                 android:hint="고객명을 입력하세요"
+                android:drawableRight="@drawable/ic_zoom_in_black_24dp"
                 />
 
 
         </LinearLayout>
         <ListView
-            android:padding="10dp"
+            android:textFilterEnabled="true"
+            android:layout_margin="30dp"
+            android:padding="30dp"
             android:divider="#fff"
             android:dividerHeight="5dp"
             android:id="@+id/listView"
