@@ -20,7 +20,9 @@
             android:layout_width="140dp"
             android:layout_height="100dp"
             android:onClick="onClick"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:background="#ffffff" />
 
         <ImageButton
             android:id="@+id/b2"
