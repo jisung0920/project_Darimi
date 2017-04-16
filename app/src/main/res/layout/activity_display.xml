@@ -7,12 +7,10 @@
     android:padding="30dp"
     android:orientation="vertical"
     android:weightSum="6"
-    android:background="#cac8c8"
     tools:context="com.example.jisung.darimi.displayActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-
         android:layout_height="0dp"
         android:layout_weight="1">
 
@@ -21,7 +19,9 @@
             android:layout_width="140dp"
             android:layout_height="100dp"
             android:onClick="onClick"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:background="#ffffff"/>
 
         <ImageButton
             android:id="@+id/b2"
@@ -61,21 +61,25 @@
 
             <TextView
                 android:textSize="40dp"
-                android:textColor="@color/TextColor"
+                android:background="#4271e9"
+                android:textColor="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="주문내역" />
 
             <GridLayout
+                android:background="#8bc8e7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-
                 android:layout_weight="1"
                 android:columnCount="4"
                 android:rowCount="3">
 
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp"
@@ -83,30 +87,51 @@
                     android:id="@+id/sendMsg"
                     />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
                 <ImageButton
+                    android:background="#ffffff"
+                    android:src="@drawable/order_1"
+                    android:scaleType="fitXY"
                     android:layout_width="280dp"
                     android:layout_height="250dp"
                     android:layout_margin="5dp" />
