@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="6"
-    android:layout_margin="30dp"
+    android:background="#cac8c8"
+    android:padding="30dp"
     tools:context="com.example.jisung.darimi.SearchActivity">
     <LinearLayout
         android:layout_weight="1"
@@ -15,25 +16,28 @@
         android:layout_height="0dp">
         <ImageButton
             android:id="@+id/b1"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
             android:onClick="onClick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_launcher" />
+
         <ImageButton
             android:id="@+id/b2"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
             android:onClick="onClick"
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:src="@mipmap/ic_launcher" />
         <View
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <TextView
+            android:textSize="40dp"
+            android:textColor="@color/TextColor"
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0000-00-00"
+            android:text="2017-04-23"
             android:layout_gravity="bottom"
             />
 
@@ -48,18 +52,26 @@
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
             android:layout_margin="10dp">
             <TextView
+                android:textSize="40dp"
+                android:textColor="@color/TextColor"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:text="고객검색"/>
             <EditText
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/TextColor"
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:layout_gravity="center"
                 android:drawableRight="@drawable/ic_action_name"
                 android:hint="고객명을 입력하세요"
                 />
@@ -67,8 +79,9 @@
 
         </LinearLayout>
         <ListView
+            android:padding="10dp"
             android:divider="#fff"
-            android:dividerHeight="1dp"
+            android:dividerHeight="5dp"
             android:id="@+id/listView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></ListView>
@@ -82,7 +95,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="신규등록"
+            android:textSize="40dp"
             android:id="@+id/regit"
+            android:textColor="@color/TextColor"
             android:onClick="onClick"/>
         <View
             android:layout_width="wrap_content"
@@ -91,6 +106,8 @@
         <Button
             android:id="@+id/comp"
             android:text="완료"
+            android:textSize="40dp"
+            android:textColor="@color/TextColor"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:onClick="onClick"/>

@@ -52,7 +52,7 @@ public class SearchActivity extends AppCompatActivity {
 
                 break;
             case R.id.comp:
-                Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
                 intent = new Intent(this,HomeActivity.class);
                 startActivity(intent);
                 break;
