@@ -11,12 +11,14 @@ import android.widget.Toast;
 public class displayActivity extends AppCompatActivity {
 
     Intent intent;
-    ImageButton send_b;
+    ImageButton send_b,del_I;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
         send_b = (ImageButton)findViewById(R.id.sendMsg);
+        del_I = (ImageButton)findViewById(R.id.del_I);
     }
 
     public void onClick(View v){
@@ -30,8 +32,14 @@ public class displayActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.sendMsg:
+
                 Toast.makeText(this, "문자가 전송되었습니다.", Toast.LENGTH_SHORT).show();
-                //send_b.setImageResource(); 문자발송 체크 표시된 이미지로 바꾸기
+                //send_b.setImageResource(R.drawable.back);
+                //send_b.setImageResource(R,id); 문자발송 체크 표시된 이미지로 바꾸기
+                break;
+            case R.id.del_I:
+                Toast.makeText(this, "수령 완료되었습니다.", Toast.LENGTH_SHORT).show();
+                del_I.setVisibility(View.GONE);
                 break;
             default:
                 intent = new Intent(this,HomeActivity.class);

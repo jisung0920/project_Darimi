@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
-    android:background="#cac8c8"
+    android:background="#cfeeff"
     android:orientation="vertical"
-    android:weightSum="6"
+    android:weightSum="7"
     tools:context="com.example.jisung.darimi.HomeActivity">
 
     <LinearLayout
@@ -15,14 +15,6 @@
         android:layout_height="0dp"
         android:layout_marginLeft="10dp"
         android:layout_weight="1">
-
-        <ImageButton
-            android:id="@+id/b1"
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:src="@drawable/back"
-            android:scaleType="fitXY"
-            android:background="#ffffff" />
 
         <ImageButton
             android:id="@+id/b2"
@@ -42,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:textSize="40dp"
-            android:text="2017-04-23" />
+            android:text="2017-04-23  " />
 
 
     </LinearLayout>
@@ -51,41 +43,47 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
-        android:layout_weight="4"
+        android:layout_weight="5.5"
         android:orientation="horizontal">
 
         <ImageButton
+
+            android:layout_marginRight="8dp"
             android:textColor="@color/TextColor"
             android:id="@+id/orderButton"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#ffffff"
             android:onClick="onClick"
             android:scaleType="fitXY"
-            android:src="@drawable/order"
+            android:src="@drawable/mainbutton1"
             android:text="주문" />
 
         <ImageButton
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:textColor="@color/TextColor"
             android:id="@+id/displayButton"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#ffffff"
             android:onClick="onClick"
             android:scaleType="fitXY"
-            android:src="@drawable/display"
+            android:src="@drawable/mainbutton2"
             android:text="현황" />
 
         <ImageButton
+            android:layout_marginLeft="8dp"
+
             android:textColor="@color/TextColor"
-            android:src="@drawable/income"
+            android:src="@drawable/mainbutton3"
             android:scaleType="fitXY"
             android:background="#ffffff"
             android:id="@+id/incomeButton"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="onClick"
             android:text="매출" />

@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CalendarView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class IncomeActivity extends AppCompatActivity {
 
     Intent intent;
-    TextView t1,t2,t3,t4,t5,t6;
+    ImageView d1,chart;
+    ImageButton day,month,year;
     CalendarView c1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +25,7 @@ public class IncomeActivity extends AppCompatActivity {
         c1.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                t1.setVisibility(View.VISIBLE);
-                t2.setVisibility(View.VISIBLE);
-                t3.setVisibility(View.VISIBLE);
-                t4.setVisibility(View.VISIBLE);
-                t5.setVisibility(View.VISIBLE);
-                t6.setVisibility(View.VISIBLE);
+                d1.setImageResource(R.drawable.yester);
 
             }
         });
@@ -35,12 +33,11 @@ public class IncomeActivity extends AppCompatActivity {
     }
     void init(){
         c1 = (CalendarView)findViewById(R.id.cal);
-        t1 = (TextView)findViewById(R.id.t1);
-        t2 = (TextView)findViewById(R.id.t2);
-        t3 = (TextView)findViewById(R.id.t3);
-        t4 = (TextView)findViewById(R.id.t4);
-        t5 = (TextView)findViewById(R.id.t5);
-        t6 = (TextView)findViewById(R.id.t6);
+        d1 = (ImageView)findViewById(R.id.d1);
+        day = (ImageButton)findViewById(R.id.day);
+        month = (ImageButton)findViewById(R.id.month);
+        year = (ImageButton)findViewById(R.id.year);
+        chart = (ImageView)findViewById(R.id.yearchart);
 
     }
     public void onClick(View v){
@@ -54,6 +51,24 @@ public class IncomeActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.cal:
+                break;
+            case R.id.day:
+                day.setImageResource(R.drawable.day_click);
+                month.setImageResource(R.drawable.month_noclick);
+                year.setImageResource(R.drawable.year_noclick);
+                break;
+            case R.id.month:
+                day.setImageResource(R.drawable.day_noclick);
+                month.setImageResource(R.drawable.month_click);
+                year.setImageResource(R.drawable.year_noclick);
+                break;
+            case R.id.year:
+                day.setImageResource(R.drawable.day_noclick);
+                month.setImageResource(R.drawable.month_noclick);
+                year.setImageResource(R.drawable.year_click);
+                d1.setImageResource(R.drawable.yearcon);
+                c1.setVisibility(View.INVISIBLE);
+                chart.setVisibility(View.VISIBLE);
 
                 break;
             default:

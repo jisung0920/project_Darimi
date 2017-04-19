@@ -30,20 +30,21 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         init();
-        data.add("강동원                   01058493495");
-        data.add("권영훈                   01052345445");
-        data.add("김동규                   01056456245");
-        data.add("남정훈                   01045634655");
-        data.add("문제웅                   01058493495");
-        data.add("배상진                   01058493495");
-        data.add("백수민                   01012346856");
-        data.add("서그림                   01058493495");
-        data.add("서수민                   01058493495");
-        data.add("송요한                   01058493495");
-        data.add("정지성                   01078684561");
+        data.add("   강동원                   01058493495");
+        data.add("   권영훈                   01052345445");
+        data.add("   김동규                   01056456245");
+        data.add("   남정훈                   01045634655");
+        data.add("   문제웅                   01058493495");
+        data.add("   배상진                   01058493495");
+        data.add("   백수민                   01012346856");
+        data.add("   서그림                   01058493495");
+        data.add("   서수민                   01058493495");
+        data.add("   송요한                   01058493495");
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_single_choice,data);
+
         listview.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         listview.setAdapter(adapter);
+
         e1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -91,7 +92,7 @@ public class SearchActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Toast.makeText(SearchActivity.this, "등록 되었습니다.", Toast.LENGTH_SHORT).show();
-                        Intent intet = new Intent(getApplicationContext(),SearchActivity.class);
+                        Intent intet = new Intent(getApplicationContext(),displayActivity.class);
                         startActivity(intet);
                     }
                 });

@@ -6,17 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="6"
-    android:background="#cac8c8"
+    android:background="#cfeeff"
     android:padding="30dp"
     tools:context="com.example.jisung.darimi.SearchActivity">
     <LinearLayout
         android:layout_weight="1"
-
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <ImageButton
             android:id="@+id/b1"
-            android:layout_width="140dp"
+            android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="onClick"
             android:src="@drawable/back"
@@ -25,7 +24,7 @@
 
         <ImageButton
             android:id="@+id/b2"
-            android:layout_width="140dp"
+            android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="onClick"
             android:src="@mipmap/ic_launcher" />
@@ -51,6 +50,7 @@
         android:layout_height="0dp"
         android:layout_weight="4"
         android:orientation="vertical"
+
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,30 +66,34 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="고객검색"/>
+
             <EditText
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/TextColor"
+                android:id="@+id/e1"
+                android:focusable="false"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="40dp"
-                android:id="@+id/e1"
                 android:layout_gravity="center"
-                android:hint="고객명을 입력하세요"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
                 android:drawableRight="@drawable/ic_zoom_in_black_24dp"
-                />
+                android:hint="고객명을 입력하세요"
+                android:textColor="@color/TextColor"
+                android:textSize="40dp" />
 
 
         </LinearLayout>
+
         <ListView
-            android:textFilterEnabled="true"
-            android:layout_margin="30dp"
-            android:padding="30dp"
-            android:divider="#fff"
-            android:dividerHeight="5dp"
+
             android:id="@+id/listView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#cfeeff"
+            android:divider="#212121"
+            android:dividerHeight="5dp"
+            android:padding="30dp"
+            android:textFilterEnabled="true"></ListView>
 
     </LinearLayout>
     <LinearLayout

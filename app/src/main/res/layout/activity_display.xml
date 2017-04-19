@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
+    android:background="#cfeeff"
     android:orientation="vertical"
     android:weightSum="6"
     tools:context="com.example.jisung.darimi.displayActivity">
@@ -53,6 +54,7 @@
         android:layout_weight="4"
         android:orientation="vertical">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,80 +67,77 @@
                 android:textColor="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="주문내역" />
+                android:text="  주문내역" />
 
-            <GridLayout
-                android:background="#8bc8e7"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:columnCount="4"
-                android:rowCount="3">
+                android:layout_height="wrap_content"
+                >
 
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp"
-                    android:onClick="onClick"
-                    android:id="@+id/sendMsg"
-                    />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
-                <ImageButton
-                    android:background="#ffffff"
-                    android:src="@drawable/order_1"
-                    android:scaleType="fitXY"
-                    android:layout_width="280dp"
-                    android:layout_height="250dp"
-                    android:layout_margin="5dp" />
+                <GridLayout
+                    android:background="#8bc8e7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:columnCount="4"
+                    android:rowCount="3">
+
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:src="@drawable/list5"
+                        android:scaleType="fitXY"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp"
+                        android:onClick="onClick"
+                        android:id="@+id/sendMsg"
+                        />
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:src="@drawable/list6"
+                        android:scaleType="fitXY"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp" />
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:src="@drawable/list7"
+                        android:scaleType="fitXY"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp" />
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:src="@drawable/list8"
+                        android:scaleType="fitXY"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp" />
+
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:src="@drawable/list9"
+                        android:scaleType="fitXY"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp" />
+                    <ImageButton
+                        android:onClick="onClick"
+                        android:id="@+id/del_I"
+                        android:background="#ffffff"
+                        android:src="@drawable/order_1"
+                        android:scaleType="fitXY"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp" />
 
 
 
-            </GridLayout>
+
+                </GridLayout>
+
+            </ScrollView>
 
         </LinearLayout>
 
@@ -150,14 +149,7 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <Button
-            android:textColor="@color/TextColor"
-            android:id="@+id/regit"
-            android:textSize="40dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:onClick="onClick"
-            android:text="신규등록" />
+
 
         <View
             android:layout_width="wrap_content"
