@@ -34,7 +34,7 @@ public class displayActivity extends AppCompatActivity {
             case R.id.sendMsg:
 
                 Toast.makeText(this, "문자가 전송되었습니다.", Toast.LENGTH_SHORT).show();
-                //send_b.setImageResource(R.drawable.back);
+                send_b.setImageResource(R.drawable.list6);
                 //send_b.setImageResource(R,id); 문자발송 체크 표시된 이미지로 바꾸기
                 break;
             case R.id.del_I:

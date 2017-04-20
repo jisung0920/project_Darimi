@@ -1,6 +1,8 @@
 package com.example.jisung.darimi;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.annotation.ColorInt;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -62,7 +64,7 @@ public class OrderActivity extends AppCompatActivity {
                 });
                 return view;//첫번째 item 만
             }
-        }).setIndicator("상의"));
+        }).setIndicator("Best"));
         tabhost.addTab(tabhost.newTabSpec("B").setContent(new TabHost.TabContentFactory() {
 
             @Override
@@ -112,6 +114,10 @@ public class OrderActivity extends AppCompatActivity {
                 return view;
             }
         }).setIndicator("기타"));
+
+        // TabHost 배경
+
+        tabhost.getTabWidget().getChildAt(0).setBackgroundResource(R.color.colorPrimary);
 
     }
     void init(){

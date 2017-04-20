@@ -15,7 +15,7 @@ public class IncomeActivity extends AppCompatActivity {
 
     Intent intent;
     ImageView d1,chart;
-    ImageButton day,month,year;
+    ImageView day,month,year;
     CalendarView c1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +34,9 @@ public class IncomeActivity extends AppCompatActivity {
     void init(){
         c1 = (CalendarView)findViewById(R.id.cal);
         d1 = (ImageView)findViewById(R.id.d1);
-        day = (ImageButton)findViewById(R.id.day);
-        month = (ImageButton)findViewById(R.id.month);
-        year = (ImageButton)findViewById(R.id.year);
+        day = (ImageView)findViewById(R.id.day);
+        month = (ImageView)findViewById(R.id.month);
+        year = (ImageView)findViewById(R.id.year);
         chart = (ImageView)findViewById(R.id.yearchart);
 
     }

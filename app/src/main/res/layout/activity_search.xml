@@ -58,6 +58,8 @@
             android:orientation="horizontal"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:layout_margin="10dp">
             <TextView
                 android:textSize="40dp"
@@ -69,7 +71,6 @@
 
             <EditText
                 android:id="@+id/e1"
-                android:focusable="false"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -78,47 +79,51 @@
                 android:drawableRight="@drawable/ic_zoom_in_black_24dp"
                 android:hint="고객명을 입력하세요"
                 android:textColor="@color/TextColor"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                />
 
 
         </LinearLayout>
 
         <ListView
-
+            android:listSelector="#5ed4e7"
             android:id="@+id/listView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="#cfeeff"
-            android:divider="#212121"
+            android:divider="#f6f9f4f4"
             android:dividerHeight="5dp"
-            android:padding="30dp"
+            android:padding="25dp"
             android:textFilterEnabled="true"></ListView>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:weightSum="7"
+        android:layout_margin="20dp"
         android:layout_weight="1">
         <Button
-            android:layout_width="wrap_content"
+
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="신규등록"
-            android:textSize="40dp"
+            android:background="@drawable/new_regit"
             android:id="@+id/regit"
+            android:layout_weight="2"
             android:textColor="@color/TextColor"
             android:onClick="onClick"/>
+
         <View
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="3"/>
         <Button
             android:id="@+id/comp"
-            android:text="완료"
-            android:textSize="40dp"
-            android:textColor="@color/TextColor"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:background="@drawable/finish"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:onClick="onClick"/>
     </LinearLayout>
 

@@ -40,11 +40,11 @@ public class SearchActivity extends AppCompatActivity {
         data.add("   서그림                   01058493495");
         data.add("   서수민                   01058493495");
         data.add("   송요한                   01058493495");
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_single_choice,data);
+        adapter = new ArrayAdapter<String>(this,R.layout.client_list,data);
 
         listview.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         listview.setAdapter(adapter);
-
+        e1.requestFocus();
         e1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
