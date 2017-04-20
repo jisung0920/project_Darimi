@@ -16,53 +16,54 @@
         android:rowCount="3">
     <ImageButton
         android:id="@+id/i1"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         android:layout_gravity="fill"
         android:src="@mipmap/ic_launcher_round"
         />
     <ImageButton
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_gravity="fill"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         android:src="@mipmap/ic_launcher_round"
         />
     <ImageButton
         android:id="@+id/i3"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         android:src="@mipmap/ic_launcher_round"
         />
     <ImageButton
         android:id="@+id/i4"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         android:src="@mipmap/ic_launcher_round"
         />
     <ImageButton
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         android:src="@mipmap/ic_launcher_round"
         />
     <ImageButton
         android:src="@mipmap/ic_launcher_round"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         />
     <ImageButton
         android:src="@mipmap/ic_launcher_round"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         />
     <ImageButton
         android:id="@+id/i2"
         android:src="@mipmap/ic_launcher_round"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         />
     <ImageButton
         android:src="@mipmap/ic_launcher_round"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="299dp"
+        android:layout_height="304dp"
         />
     </GridLayout>
 
