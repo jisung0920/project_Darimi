@@ -17,20 +17,20 @@
 
         <ImageButton
             android:id="@+id/b1"
-            android:layout_width="140dp"
-            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:onClick="onClick"
             android:src="@drawable/back"
             android:scaleType="fitXY"
             android:background="#ffffff"/>
-
         <ImageButton
             android:id="@+id/b2"
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:onClick="onClick"
-            android:src="@mipmap/ic_launcher" />
-
+            android:layout_width="250dp"
+            android:layout_height="87dp"
+            android:scaleType="fitXY"
+            android:background="#cfeeff"
+            android:src="@drawable/logo" />
         <View
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -58,10 +58,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:orientation="vertical">
 
             <TextView
+                android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#4271e9"
@@ -76,8 +76,8 @@
                 <GridLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:paddingLeft="30dp"
+
+
                     android:layout_weight="1"
                     android:background="#8bc8e7"
                     android:columnCount="4"
@@ -87,7 +87,7 @@
 
                         android:layout_width="269dp"
                         android:layout_height="273dp"
-                        android:layout_margin="5dp"
+                        android:layout_margin="15dp"
                         android:background="#ffffff"
                         android:scaleType="fitXY"
                         android:src="@drawable/jisung" />
@@ -97,7 +97,7 @@
                         android:id="@+id/sendMsg"
                         android:layout_width="269dp"
                         android:layout_height="273dp"
-                        android:layout_margin="5dp"
+                        android:layout_margin="15dp"
                         android:background="#ffffff"
                         android:scaleType="fitXY"
                         android:src="@drawable/hong" />
@@ -105,7 +105,7 @@
                     <ImageButton
                         android:layout_width="269dp"
                         android:layout_height="273dp"
-                        android:layout_margin="5dp"
+                        android:layout_margin="15dp"
                         android:background="#ffffff"
                         android:scaleType="fitXY"
                         android:src="@drawable/list7" />
@@ -113,7 +113,7 @@
                     <ImageButton
                         android:layout_width="269dp"
                         android:layout_height="273dp"
-                        android:layout_margin="5dp"
+                        android:layout_margin="15dp"
                         android:background="#ffffff"
                         android:scaleType="fitXY"
                         android:src="@drawable/list8" />
@@ -121,7 +121,7 @@
                     <ImageButton
                         android:layout_width="269dp"
                         android:layout_height="273dp"
-                        android:layout_margin="5dp"
+                        android:layout_margin="15dp"
                         android:background="#ffffff"
                         android:scaleType="fitXY"
                         android:src="@drawable/list9" />
@@ -130,7 +130,7 @@
                         android:id="@+id/del_I"
                         android:layout_width="269dp"
                         android:layout_height="273dp"
-                        android:layout_margin="5dp"
+                        android:layout_margin="15dp"
                         android:background="#ffffff"
                         android:onClick="onClick"
                         android:scaleType="fitXY"
@@ -151,7 +151,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         android:weightSum="8">
 
 
@@ -162,6 +162,7 @@
             android:layout_weight="5" />
 
         <Button
+            android:layout_marginTop="15dp"
             android:layout_weight="3"
             android:textSize="40dp"
             android:background="@drawable/finish"

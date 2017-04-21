@@ -15,53 +15,84 @@
         android:columnCount="3"
         android:rowCount="3">
     <ImageButton
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
         android:id="@+id/i1"
         android:layout_width="299dp"
         android:layout_height="304dp"
         android:layout_gravity="fill"
-        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="10dp"
+        android:src="@drawable/m1"
+
         />
     <ImageButton
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m4"
         android:layout_gravity="fill"
         android:layout_width="299dp"
         android:layout_height="304dp"
-        android:src="@mipmap/ic_launcher_round"
+
         />
     <ImageButton
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
         android:id="@+id/i3"
         android:layout_width="299dp"
         android:layout_height="304dp"
-        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="10dp"
+        android:src="@drawable/m7"
         />
     <ImageButton
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m2"
         android:id="@+id/i4"
         android:layout_width="299dp"
         android:layout_height="304dp"
-        android:src="@mipmap/ic_launcher_round"
         />
     <ImageButton
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m5"
         android:layout_width="299dp"
         android:layout_height="304dp"
-        android:src="@mipmap/ic_launcher_round"
+
         />
     <ImageButton
-        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m3"
         android:layout_width="299dp"
         android:layout_height="304dp"
         />
     <ImageButton
-        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m8"
         android:layout_width="299dp"
         android:layout_height="304dp"
         />
     <ImageButton
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m6"
         android:id="@+id/i2"
-        android:src="@mipmap/ic_launcher_round"
+
         android:layout_width="299dp"
         android:layout_height="304dp"
         />
     <ImageButton
-        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="fitXY"
+        android:background="#cfeeff"
+        android:layout_margin="10dp"
+        android:src="@drawable/m9"
         android:layout_width="299dp"
         android:layout_height="304dp"
         />

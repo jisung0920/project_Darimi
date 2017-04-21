@@ -15,8 +15,9 @@
         android:layout_height="0dp">
         <ImageButton
             android:id="@+id/b1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:onClick="onClick"
             android:src="@drawable/back"
             android:scaleType="fitXY"
@@ -24,10 +25,11 @@
 
         <ImageButton
             android:id="@+id/b2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:onClick="onClick"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_width="250dp"
+            android:layout_height="87dp"
+            android:scaleType="fitXY"
+            android:background="#cfeeff"
+            android:src="@drawable/logo"  />
         <View
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -91,7 +93,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:background="#cfeeff"
             android:divider="#f6f9f4f4"
             android:dividerHeight="5dp"
             android:padding="25dp"

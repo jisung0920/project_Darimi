@@ -17,21 +17,23 @@
 
         <ImageButton
             android:id="@+id/b1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#cfeeff"
             android:onClick="onClick"
             android:scaleType="fitXY"
             android:src="@drawable/back"
             />
 
         <ImageButton
-            android:id="@+id/b2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:onClick="onClick"
-            android:src="@mipmap/ic_launcher" />
 
+            android:id="@+id/b2"
+            android:layout_width="250dp"
+            android:layout_height="87dp"
+            android:scaleType="fitXY"
+            android:background="#cfeeff"
+            android:src="@drawable/logo" />
         <View
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -120,7 +122,8 @@
                 android:id="@+id/order_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/order1" />
+                android:src="@drawable/order1"
+                android:paddingBottom="15dp"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -149,14 +152,14 @@
         <View
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"/>
+            android:layout_weight="0.1"/>
 
         <ImageView
 
             android:id="@+id/comp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.7"
+            android:layout_weight="1.9"
             android:onClick="onClick"
             android:scaleType="fitXY"
             android:src="@drawable/next" />

@@ -1,6 +1,8 @@
 package com.example.jisung.darimi;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -10,7 +12,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this,HomeActivity.class);
-        startActivity(intent);
+        Handler handler = new Handler() {
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                Intent registerIntent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(registerIntent);
+                finish();
+            }
+        };
+        handler.sendEmptyMessageDelayed(0, 2000);
+
     }
 }

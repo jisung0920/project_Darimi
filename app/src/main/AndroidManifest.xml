@@ -20,6 +20,7 @@
         <activity android:name=".HomeActivity"
             android:screenOrientation="landscape"/>
         <activity android:name=".SearchActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
             android:screenOrientation="landscape"/>
         <activity android:name=".OrderActivity"
             android:screenOrientation="landscape"/>

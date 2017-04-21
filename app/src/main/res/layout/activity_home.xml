@@ -17,10 +17,13 @@
         android:layout_weight="1">
 
         <ImageButton
+
             android:id="@+id/b2"
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_width="250dp"
+            android:layout_height="87dp"
+            android:scaleType="fitXY"
+            android:background="#cfeeff"
+            android:src="@drawable/logo" />
 
         <View
             android:layout_width="0dp"
