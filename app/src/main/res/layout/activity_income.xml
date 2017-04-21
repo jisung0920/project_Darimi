@@ -42,7 +42,7 @@
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2017-04-23"
+            android:text="2017-04-23  "
             android:layout_gravity="bottom"
             />
 
@@ -125,7 +125,7 @@
                     android:id="@+id/cal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#963c86c6"
+                    android:background="#964b93d1"
                     android:clickable="true"
                     android:onClick="onClick" />
 
@@ -150,7 +150,7 @@
             android:orientation="vertical">
 
             <ImageView
-
+                android:paddingLeft="11dp"
                 android:background="#cfeeff"
                 android:id="@+id/d1"
                 android:layout_width="match_parent"

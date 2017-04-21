@@ -44,12 +44,12 @@ public class OrderActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         if(count ==0) {
                             img.setImageResource(R.drawable.order2);
-                            sum.setText("4000원");
+                            sum.setText("5000원");
                             count++;
                         }
                         else{
                             img.setImageResource(R.drawable.order3);
-                            sum.setText("8000원");
+                            sum.setText("10000원");
                             count++;
                         }
 
@@ -59,7 +59,7 @@ public class OrderActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         img.setImageResource(R.drawable.order4);
-                        sum.setText("11000원");
+                        sum.setText("16000원");
                     }
                 });
                 return view;//첫번째 item 만
