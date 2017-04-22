@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -39,32 +40,33 @@ public class OrderActivity extends AppCompatActivity {
                 Log.d("check","i1 init be");
                 i1 = (ImageButton)view.findViewById(R.id.i1);
                 i2 = (ImageButton)view.findViewById(R.id.i2);
-                i1.setOnClickListener(new View.OnClickListener() {
+                i2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if(count ==0) {
-                            img.setImageResource(R.drawable.order2);
+                            img.setImageResource(R.drawable.order3);
                             sum.setText("11000원");
                             count++;
                         }
                         else{
-                            img.setImageResource(R.drawable.order3);
+                            img.setImageResource(R.drawable.order4);
                             sum.setText("16000원");
                             count++;
                         }
 
                     }
                 });
-                i2.setOnClickListener(new View.OnClickListener() {
+                i1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        img.setImageResource(R.drawable.order4);
+                        img.setImageResource(R.drawable.order2);
                         sum.setText("6000원");
                     }
                 });
                 return view;//첫번째 item 만
             }
         }).setIndicator("Best"));
+
         tabhost.addTab(tabhost.newTabSpec("B").setContent(new TabHost.TabContentFactory() {
 
             @Override

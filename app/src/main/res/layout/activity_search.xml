@@ -58,29 +58,31 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:orientation="horizontal"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:layout_margin="10dp">
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
             <TextView
+                android:background="@drawable/seach"
                 android:textSize="40dp"
                 android:textColor="@color/TextColor"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="고객검색"/>
+/>
 
             <EditText
+                android:paddingLeft="25dp"
+                android:background="#ffff"
                 android:id="@+id/e1"
-                android:imeOptions="actionDone"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
                 android:layout_weight="1"
-                android:drawableRight="@drawable/ic_zoom_in_black_24dp"
                 android:hint="고객명을 입력하세요"
+                android:textColorHint="#5555"
+                android:imeOptions="actionDone"
                 android:inputType="text"
                 android:textColor="@color/TextColor"
                 android:textSize="40dp" />
@@ -89,6 +91,7 @@
         </LinearLayout>
 
         <ListView
+            android:background="#ffff"
             android:listSelector="#5ed4e7"
             android:id="@+id/listView"
             android:layout_width="match_parent"
@@ -104,7 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:weightSum="7"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1">
         <Button
 
@@ -112,18 +115,18 @@
             android:layout_height="match_parent"
             android:background="@drawable/new_regit"
             android:id="@+id/regit"
-            android:layout_weight="2.2"
+            android:layout_weight="2.4"
             android:textColor="@color/TextColor"
             android:onClick="onClick"/>
 
         <View
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2.5"/>
+            android:layout_weight="2.2"/>
         <Button
             android:id="@+id/comp"
             android:background="@drawable/finish"
-            android:layout_weight="2.2"
+            android:layout_weight="2.4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:onClick="onClick"/>

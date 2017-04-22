@@ -64,7 +64,7 @@
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#4271e9"
+                android:background="#1D93DB"
                 android:text="  주문내역"
                 android:textColor="#ffffff"
                 android:textSize="40dp" />
@@ -79,7 +79,7 @@
 
 
                     android:layout_weight="1"
-                    android:background="#8bc8e7"
+                    android:background="#9688c5ed"
                     android:columnCount="4"
                     android:rowCount="3">
 
@@ -150,16 +150,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="20dp"
-
         android:weightSum="8">
 
 
+        <Button
+            android:layout_marginTop="15dp"
+            android:background="@drawable/manage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
 
         <View
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5" />
+            android:layout_weight="2" />
 
         <Button
             android:layout_marginTop="15dp"
@@ -167,7 +171,7 @@
             android:textSize="40dp"
             android:background="@drawable/finish"
             android:id="@+id/comp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:onClick="onClick" />
     </LinearLayout>

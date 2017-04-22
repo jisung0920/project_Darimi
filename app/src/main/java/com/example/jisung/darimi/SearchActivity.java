@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -87,6 +88,7 @@ public class SearchActivity extends AppCompatActivity {
             case R.id.regit:
                 View view = View.inflate(this,R.layout.add_box,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(this);
+
                 b1 = (Button)view.findViewById(R.id.confirmButton);
                 b1.setOnClickListener(new View.OnClickListener() {
                     @Override
