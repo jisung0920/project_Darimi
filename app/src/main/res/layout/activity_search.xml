@@ -73,6 +73,7 @@
 
             <EditText
                 android:id="@+id/e1"
+                android:imeOptions="actionDone"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -80,9 +81,9 @@
                 android:layout_weight="1"
                 android:drawableRight="@drawable/ic_zoom_in_black_24dp"
                 android:hint="고객명을 입력하세요"
+                android:inputType="text"
                 android:textColor="@color/TextColor"
-                android:textSize="40dp"
-                />
+                android:textSize="40dp" />
 
 
         </LinearLayout>
